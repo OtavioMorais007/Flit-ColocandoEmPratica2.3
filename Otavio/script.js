@@ -1,5 +1,3 @@
-const { error } = require("console");
-
 function calcularJurosCompostos(valorInicial, taxaDeJuros, tempoAnos) {
   if (valorInicial !== Math.floor(valorInicial) || taxaDeJuros !== Math.floor(taxaDeJuros) || tempoAnos !== Math.floor(tempoAnos)) {
     return undefined
