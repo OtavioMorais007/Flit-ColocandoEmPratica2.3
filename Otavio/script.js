@@ -10,9 +10,11 @@ function calcularJurosCompostos(valorInicial, taxaDeJuros, tempoAnos) {
 }
 
 function calcularRentabilidadePassada(precoAtual, precoAnterior) {
-    if(precoAtual <= 0 || precoAnterior <= 0) {
-        return undefined
-    }
-    let valorFinal = (precoAtual / precoAnterior) * 100 - 100
-    return valorFinal.toFixed(2)
+  if (precoAtual <= 0 || precoAnterior <= 0) {
+    return undefined
+  }
+  let valorFinal = (precoAtual / precoAnterior) * 100 - 100
+  return valorFinal.toFixed(2)
 }
+
+module.exports = { calcularJurosCompostos, calcularRentabilidadePassada }
